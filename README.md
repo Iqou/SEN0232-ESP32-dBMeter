@@ -27,7 +27,7 @@ The SEN0232 is actually quite simple to set up and use. It relies on an analog i
 - **Hardware Used:** At the time I wrote this code, I tested it on an **Aurora LoRa V3** (a local board designed from an Indonesian company featuring an ESP32 microcontroller and a few built-in sensors. It's basically an Arduino x ESP32 hybrid).
 - **Conversion Formula:** Since DFRobot has already handled A-weighting and calibration on the board itself, the formula used is a simple multiplication by 50 to convert the voltage value to decibels:
 
-  $$\text{dBA} = \text{Voltage (V)} \times 50$$
+  <p align="center">$\text{dBA} = \text{Voltage (V)} \times 50$</p>
 
 - **Real-World Testing:** The sensor still uses DFRobot's original conversion principle, so the measurement logic remains unchanged. I tested it side-by-side against an actual SPL meter and it's surprisingly accurate which is usually within $\pm 1\text{ dB}$, or even identical.
 
